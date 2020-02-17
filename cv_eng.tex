@@ -1,9 +1,8 @@
 \documentclass[10pt,a4paper,sans]{moderncv}    
-\moderncvstyle{banking}   
-\moderncvcolor{blue}
+\moderncvstyle{banking}
+\moderncvcolor{purple}
 \usepackage{etoolbox}
 \usepackage{xpatch}
-                   
 \usepackage{fontawesome}
 \usepackage[utf8]{inputenc}     
 \usepackage[scale=0.80]{geometry}
@@ -25,15 +24,26 @@
 {}
 
 \xpatchcmd\cventry{,}{}{}{}
+\definecolor{linkcolour}{rgb}{0,0,0}
+\newcommand{\uref}[2]{\textcolor{linkcolour}{\href{#1}{#2}}}
+
+\definecolor{color2}{RGB}{0,0,0}
+
 
 \title{CV}
 \name{Ignatii}{Dubyshkin}
 \phone[mobile]{+7 916 295 2363}       
-\email{kheldi@yandex.ru}       
+\email{kheldi@yandex.ru}
 \photo[64pt][1.0pt]{simple_photo}       
-\social[github]{deadat0m}   
-\extrainfo{\begin{tabular}[t]{@{}c@{}}A postgraduate student who looks for inspiration in human brain and \\ uses it to look for new instruments and technologies in various \\ adjacent areasfor further transfer back into the neuroscience field.
+\social[github]{DeadAt0m}
+
+
+\extrainfo{\begin{tabular}[t]{@{}c@{}}\\A postgraduate student who looks for inspiration in human brain and \\ uses it to look for new instruments and technologies in various \\ adjacent areasfor further transfer back into the neuroscience field.
 \end{tabular}}
+
+
+
+
 %------------------------------------
 %            content
 %----------------------------------------------------------------------------------
