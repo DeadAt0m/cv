@@ -1,0 +1,148 @@
+\documentclass[10pt,a4paper,sans]{moderncv}    
+\moderncvstyle{banking}   
+\moderncvcolor{blue}
+\usepackage{etoolbox}
+\usepackage{xpatch}
+                   
+\usepackage{fontawesome}
+\usepackage[utf8]{inputenc}     
+\usepackage[scale=0.80]{geometry}
+
+\patchcmd{\makehead}
+{\hfil}
+{\hspace*{0.07\textwidth}}
+{}
+{}
+\patchcmd{\makehead}
+{\setlength{\makeheaddetailswidth}{0.8\textwidth}}
+{\setlength{\makeheaddetailswidth}{0.67\textwidth}}
+{}
+{}
+\patchcmd{\makehead}
+{\\[2.5em]}
+{\hfil\raisebox{-1.4cm}{\framebox{\includegraphics[width=\@photowidth]{\@photo}}}\\[2.5em]}
+{}
+{}
+
+\xpatchcmd\cventry{,}{}{}{}
+
+\title{CV}
+\name{Ignatii}{Dubyshkin}
+\phone[mobile]{+7 916 295 2363}       
+\email{kheldi@yandex.ru}       
+\photo[64pt][1.0pt]{simple_photo}       
+\social[github]{deadat0m}   
+\extrainfo{\begin{tabular}[t]{@{}c@{}}A postgraduate student who looks for inspiration in human brain and \\ uses it to look for new instruments and technologies in various \\ adjacent areasfor further transfer back into the neuroscience field.
+\end{tabular}}
+%------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Experience}
+
+\vspace{2pt}
+\begin{itemize}
+	
+
+
+\item{\cventry{January 2019--Now}{\footnotesize{\textbf{Biometric Algorithm Lab}}}{Samsung R\&D Institute Russia}{Moscow, Russia}{}{\textit{Research Engineer}}{\vspace{3pt}
+\quad Developing biometric algorithms and solutions for Samsung mobile devices: primary deep learning and computer vision based.
+}}
+\vspace{6pt}
+
+\item{\cventry{November 2017--October 2018}{\footnotesize{\textbf{Research laboratory, part of Higher School of Economics}}}{Centre for Bioelectric Interfaces}{Moscow, Russia}{}{\textit{Research intern}}{
+\begin{itemize}
+\item{Search, implementation and enhancement of classical algorithms for preprocessing of brain related signal: ICA(various types), wavelet based denoising, filter bank common spatial pattern.} 
+\end{itemize}
+\vspace{3pt}
+\textit{\footnotesize{DevOps-Engineer}}
+\vspace{3pt}
+\begin{itemize}
+\item{Deploy and support of a private computational cluster and cloud (x8 Nvidia 1080Ti) based on dockerized services: NextCloud, Jupyterhub, Collobora, MatterMost and complex built jupyter kernels.}
+\end{itemize}
+}}
+
+\vspace{8pt}
+\item{\cventry{June 2017--June 2018}{\footnotesize{\textbf{A startup in the area of neuroscience dealing in biofeedback and biomonitoring}}}{Neurocentre, LTD}{Moscow, Russia}{}{\textit{Software Engineer}}{\vspace{3pt}\begin{itemize}
+\item{Develop software for multichannel signal classification(deep learning based).}
+\item{Search and adapt new technological devices and models, analyze their applicability for the business interests of the company.}
+\item{Test the portable devices, ranging from heartbeat monitor to EEG and tDCS.}
+\end{itemize}}}
+
+\vspace{8pt}
+
+\item{\cventry{June 2014--January 2016}{\footnotesize{\textbf{Neuroscience research institute, part of Russian Academy of Sciences}}}{Institute of Higher Nervous Activity}{Moscow, Russia}{}{\textit{Research intern}}{\vspace{3pt}
+\begin{itemize}
+\item{Produced and published a research titled "The Use of Machine Learning Methods for Identification of the Efficient Learning State in the Neurofeedback Paradigm".}
+\item{Won and fulfilled a grant in a team of 8 for the work on a subject of "Neurocorrelates of sensor memory reactivation during sleep in the dynamics of long-term background correlations of electronic brain activity and auditory evoked potentials".}
+\end{itemize}
+}}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+\item{\cventry{2018--Now}{Postgraduate student in the Department of Human and Animal Physiology}{Lomonosov Moscow State University, Faculty of Biology}{Moscow}{}{\textit{Laboratory of Neurophysiology and Neurocomputer Interfaces.}}{I am working on the deep learning based brain computer interfaces, especially focusing on constructing architecture(work with multichannel time series) and analyzing their behavior(feature reverse engineering).}}
+\vspace{3pt}
+\item{\cventry{2016--2018}{Master in Psychology}{Higher School of Economics}{Moscow}{\textit{Cognitive Science}}{\vspace{2pt}
+\begin{itemize}
+\item {Report for Neuroadaptive Technology Conference, Berlin, 2017, on the subject of "Neurophysiological Correlates Of Efficient Learning In The Neurofeedback Paradigm".}
+\item{Produced a research on the theme "Advanced Signal Processing and Machine Learning Techniques for Unraveling Relations Between Various Functional Brain Imaging Modalities."}
+\end{itemize}}}
+\vspace{3pt}
+\item{\cventry{2012--2016}{Bachelor in Applied Mathematics (Honours)}{Moscow Technical University of Communication and Computer Science}{Moscow}{}{\footnotesize{With focus on Digital Signal Processing, Probability Theory and Machine Learning.}}}
+\end{itemize}
+
+\vspace{3pt}
+\subsection{Coursera}
+\textbf{Deep Learning \footnotesize{(specialization - 5 courses; deeplearning.ai)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Average Grade Achieved: 100.0\%}} \\
+\textbf{Medical Neuroscience \footnotesize{(Duke University)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 99.7\%}} \\
+\textbf{Algorithmic Toolbox \footnotesize{(University of California San Diego \& Higher School of Economics)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 100.0\%}} \\
+\textbf{Data Structures \footnotesize{(University of California San Diego \& Higher School of Economics)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 100.0\%}} 
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Platforms:} Linux, Docker, CUDA, QT
+\vspace{2pt}
+\item \textbf{Programming Languages:} Proficient in: Python, C++, \LaTeX;\\
+Python Stack: PyTorch, Cython, TensorFLow, Ignite, OpenCV, Scipy, Pandas \\
+Also basic ability with: Bash, JavaScript, C\#
+\vspace{2pt}
+\item \textbf{Skills:} Deep Learning, Neuroimaging, Reinforcement Learning, Computer Vision, Digital Signal Processing, Biometric.
+\vspace{2pt}
+\item \textbf{Languages:} Russian (Native speaker), English (Advanced)
+
+
+
+\end{itemize}
+
+\section{Interests and extra-curricular activity}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{In mid-2017, I subscribed to the daily RSS feed from arxiv.org (cs.CV, cs.AI, cs.NE, cs.HC). Now this is my main source of news and inspiration.}
+\vspace{2pt}
+\item{In 2015 I earned a scholarship of Huawei "For the achievements in the academic and professional areas".}
+\vspace{2pt}
+\item{Other intersests include professional dancing, especially ballroom and latina, which I consider as main active hobby and guitar, which I am self-taught.}
+
+
+
+\end{itemize}
+
+\end{document}
