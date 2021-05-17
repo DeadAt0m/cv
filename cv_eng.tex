@@ -33,12 +33,12 @@
 \title{CV}
 \name{Ignatii}{Dubyshkin}
 \phone[mobile]{+7 916 295 2363}       
-\email{kheldi@yandex.ru}
+\email{deadat0m@yandex.ru}
 \photo[64pt][1.0pt]{simple_photo}       
 \social[github]{DeadAt0m}
 
 
-\extrainfo{\begin{tabular}[t]{@{}c@{}}\\A engineer who looks for inspiration in human brain and \\ uses it to look for new instruments and technologies in various \\ adjacent areas for further transfer back into the neuroscience field.
+\extrainfo{\begin{tabular}[t]{@{}c@{}}\\A engineer who looks for inspiration in human brain.
 \end{tabular}}
 
 
@@ -52,45 +52,71 @@
 \makecvtitle
 \section{Experience}
 
-\vspace{2pt}
 \begin{itemize}
 	
 
 
-\item{\cventry{January 2019--Now}{\footnotesize{\textbf{Biometric Algorithm Lab}}}{Samsung R\&D Institute Russia}{Moscow, Russia}{}{\textit{Research Engineer}}{\vspace{3pt}
-\textbf{Biometric algorithms and solutions for Samsung mobile devices:}
-\vspace{3pt}
-\quad \begin{itemize}
-	\item Develop Deep Metric learning algorithms for fast and efficient  embeddings obtaining under restricted computational resources.
-	\vspace{1pt}
-	\item Develop Landmark Detectors(deep learning based) for ToF and usual camera. \vspace{1pt}
-	\item Participation in development of biometric Matching algorithms.
+\item{\cventry{ }{\footnotesize{Biometric Algorithm Lab}}{\href{https://research.samsung.com/srr}{\underline{Samsung R\&D Institute Russia}}}{Moscow, Russia}{}{}{
+\normalsize{\textbf{\textit{Research Engineer \hfill January 2019--March 2020}}} \\
+\small{\textbf{Participated in development of experimental face verification pipeline based on Time-of-Flight cameras:}}\\
+\begin{itemize}
+	\item Developed a Landmark Detector (TensorFlow).
+	\item Developed Deep Metric Learning based algorithms for obtaining efficient embeddings from face images (TensorFlow).
+	\item Optimized existing algorithms: conceptual and architectural changes, pruning and quantization for further porting to secure enviroment (very computational restricted) on mobile devices.
 \end{itemize}
+\vspace{10pt}
+\small{\textbf{Participation in maintaining of Face Recognition algorithmic pipeline used in modern Samsung mobile devices:}}\\
+\begin{itemize}
+	\item Initiated the development and maintain of inner python framework (Pytorch-Lightning based) used for training Deep Metric Learning models, which makes more comfortable all further algorithms improvement for the team.
+    \item Developed the inner dataset format and rules, which makes the work with dataset comfortable, unified and reproducible: from data acquisition and annotation to dataset manipulation during training.
+\end{itemize}
+\vspace{10pt}
+\small{\textbf{Maintaining the local computational cluster:}}\\
+\begin{itemize}
+	\item Deployed the JupyterHub with JupyterLab and MLflow, which makes cluster more user-friendly for research.
+	\item Tranformed the JupyterLab to fully functional web IDE by selecting and setup of its extensions for team needs.
+\end{itemize}
+\vspace{10pt}
+\normalsize{\textbf{\textit{Project Leader \hfill April 2020--Present}}} \\
+\small{\textbf{Lead the team of 6 engineers for improvement of Face Recognition algorithmic pipeline:}} \\
+\begin{itemize}
+	\item Responsible for development of Deep Metric Learning based part of pipeline: Adapted modern architectures and approaches that more than twicely boost the algorithm performance.
+	\item Taking part in development of Image Enhancement algorithms for Face Recognition pipeline. 
+	\item Optimizing algorithms and models for work on mobile platforms.
+	\item Created and maintain an inner Pytorch library which helps to share the articles and ideas implementations for research between our laboratory.
+	\item Initiated the idea of development of inner neural network accelerator, because the existing ones are not applicable to secure enviroment where all pipeline works. This helps us to speed up project R\&D processes.
+	\item Made contributions to the inner Pytorch library by implementing the open articles in my free time (some of them are availible at my \href{https://github.com/DeadAt0m}{Github \faGithub}).
+\end{itemize}
+\vspace{4pt}
+Our algorithms were successfully commercialized in all modern Samsung mobile phones, including flagships.
 }}
 \vspace{6pt}
 
-\item{\cventry{November 2017--October 2018}{\footnotesize{\textbf{Research laboratory, part of Higher School of Economics}}}{Centre for Bioelectric Interfaces}{Moscow, Russia}{}{\textit{Research intern}}{
+\item{\cventry{}{\footnotesize{Research laboratory, part of Higher School of Economics}}{\href{https://bioelectric.hse.ru/en/}{\underline{Centre for Bioelectric Interfaces}}}{Moscow, Russia}{}{}{
+\normalsize{\textbf{\textit{Research Intern \hfill November 2017--October 2018}}} \\
 \begin{itemize}
-\item{Search, implementation and enhancement of classical algorithms for preprocessing of brain related signal: ICA(various types), wavelet based denoising, filter bank common spatial pattern.} 
+\item{Searched, implemented and enhanced classical algorithms for preprocessing of EEG signal: ICA, wavelet based denoising, filter bank common spatial pattern.} 
 \end{itemize}
-\vspace{3pt}
-\textit{\footnotesize{DevOps-Engineer}}
-\vspace{3pt}
+\vspace{30pt}
+\normalsize{\textbf{\textit{DevOps Engineer}}} 
 \begin{itemize}
-\item{Deploy and support of a private computational cluster and cloud (x8 Nvidia 1080Ti) based on dockerized services: NextCloud, Jupyterhub, Collobora, MatterMost and complex built jupyter kernels.}
+\item{Deployed and supported of a local computational cluster and cloud (x8 Nvidia 1080Ti) based on dockerized services: NextCloud, Jupyterhub, Collobora, MatterMost and complex built jupyter kernels.}
 \end{itemize}
 }}
 
 \vspace{8pt}
-\item{\cventry{June 2017--June 2018}{\footnotesize{\textbf{A startup in the area of neuroscience dealing in biofeedback and biomonitoring}}}{Neurocentre, LTD}{Moscow, Russia}{}{\textit{Software Engineer}}{\vspace{3pt}\begin{itemize}
-\item{Develop software for multichannel signal classification(deep learning based).}
-\item{Search and adapt new technological devices and models, analyze their applicability for the business interests of the company.}
-\item{Test the portable devices, ranging from heartbeat monitor to EEG and tDCS.}
+\item{\cventry{}{\footnotesize{A startup in the area of neuroscience dealing in biofeedback and biomonitoring}}{\href{http://neurocenter.pro/eng}{\underline{Neurocentre}}, LTD}{Moscow, Russia}{}{}{
+\normalsize{\textbf{\textit{Research Engineer \hfill June 2017--June 2018}}} \\
+\begin{itemize}
+\item{Developed software for multichannel signal classification (deep learning based).}
+\item{Searched and adapted new technological devices and models; analyzed their applicability for the business interests of the company.}
+\item{Testing portable devices, ranging from heartbeat monitor to EEG and tDCS.}
 \end{itemize}}}
 
 \vspace{8pt}
 
-\item{\cventry{June 2014--January 2016}{\footnotesize{\textbf{Neuroscience research institute, part of Russian Academy of Sciences}}}{Institute of Higher Nervous Activity}{Moscow, Russia}{}{\textit{Research intern}}{\vspace{3pt}
+\item{\cventry{}{\footnotesize{Neuroscience research institute, part of Russian Academy of Sciences}}{\href{https://ihna.ru/en/}{\underline{Institute of Higher Nervous Activity}}}{Moscow, Russia}{}{}{
+\normalsize{\textbf{\textit{Research Intern \hfill June 2014--January 2016}}} \\
 \begin{itemize}
 \item{Produced and published a research titled "The Use of Machine Learning Methods for Identification of the Efficient Learning State in the Neurofeedback Paradigm".}
 \item{Won and fulfilled a grant in a team of 8 for the work on a subject of "Neurocorrelates of sensor memory reactivation during sleep in the dynamics of long-term background correlations of electronic brain activity and auditory evoked potentials".}
@@ -98,6 +124,29 @@
 }}
 
 \end{itemize}
+
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Platforms:} Linux
+\vspace{2pt}
+\item \textbf{Programming Languages:} Python (\textit{upper-intermediate}), C++ (\textit{intermediate}), C (\textit{intermediate});
+\begin{itemize}
+	\item \textbf{Python Stack}: PyTorch, Cython, OpenCV, TensorFlow, LMDB, Ignite, Pytorch-Lightning, Pandas, Scipy, MLflow;
+    \item \textbf{Basic ability} with: CUDA, Docker, Bash, JavaScript, C\# and \LaTeX, nginx;
+\end{itemize}
+\vspace{2pt}
+\item \textbf{Skills:} Digital Signal Processing, Deep Learning, Computer Vision, NeuroImaging, Biometric, Reinforcement Learning;
+\vspace{2pt}
+\item \textbf{Languages:} Russian (\textit{native}), English (\textit{upper-intermediate});
+\end{itemize}
+
+
+
 
 \section{Education}
 
@@ -108,58 +157,26 @@
 \vspace{5pt}
 
 \begin{itemize}
-\item{\cventry{2018--Now}{Postgraduate student in the Department of Human and Animal Physiology}{Lomonosov Moscow State University, Faculty of Biology}{Moscow}{}{\textit{Laboratory of Neurophysiology and Neurocomputer Interfaces.}}{I am working on the deep learning based brain computer interfaces, especially focusing on constructing architecture(work with multichannel time series) and analyzing their behavior(feature reverse engineering).}}
-\vspace{3pt}
-\item{\cventry{2016--2018}{Master in Psychology}{Higher School of Economics}{Moscow}{\textit{Cognitive Science}}{\vspace{2pt}
+\item{\cventry{2016--2018}{Master in Psychology,}{Higher School of Economics, \href{https://neuro.hse.ru/en/}{\underline{Institute for Cognitive Neuroscience}}}{Moscow}{\textit{\href{https://www.hse.ru/en/ma/cogito/}{\underline{Cognitive Sciences}}}}{\vspace{2pt}
 \begin{itemize}
 \item {Report for Neuroadaptive Technology Conference, Berlin, 2017, on the subject of "Neurophysiological Correlates Of Efficient Learning In The Neurofeedback Paradigm".}
 \item{Produced a research on the theme "Advanced Signal Processing and Machine Learning Techniques for Unraveling Relations Between Various Functional Brain Imaging Modalities."}
 \end{itemize}}}
 \vspace{3pt}
-\item{\cventry{2012--2016}{Bachelor in Applied Mathematics (Honours)}{Moscow Technical University of Communication and Computer Science}{Moscow}{}{\footnotesize{With focus on Digital Signal Processing, Probability Theory and Machine Learning.}}}
+\item{\cventry{2012--2016}{Bachelor in Applied Mathematics (Honours)}{\href{https://mtuci.ru/?lang=en}{\underline{Moscow Technical University of Communication and Computer Science}}}{Moscow}{}{\footnotesize{With focus on Digital Signal Processing, Probability Theory and Machine Learning.}
+\vspace{5pt}
+\begin{itemize}
+	\item Earned a scholarship of Huawei "For the achievements in the academic and professional areas" in 2015.
+\end{itemize}}}
 \end{itemize}
 
+
 \vspace{3pt}
-\subsection{Coursera}
+\subsection{Coursera (\href{https://www.coursera.org/user/9fd327b17f80d7a02bfa6b9512cb97ae}{\underline{profile}})}
 \textbf{Deep Learning \footnotesize{(specialization - 5 courses; deeplearning.ai)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Average Grade Achieved: 100.0\%}} \\
 \textbf{Medical Neuroscience \footnotesize{(Duke University)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 99.7\%}} \\
 \textbf{Algorithmic Toolbox \footnotesize{(University of California San Diego \& Higher School of Economics)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 100.0\%}} \\
 \textbf{Data Structures \footnotesize{(University of California San Diego \& Higher School of Economics)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 100.0\%}} 
 
-\section{Technical and Personal skills}
-
-\vspace{6pt}
-
-\begin{itemize}
-
-\item \textbf{Platforms:} Linux, Docker, CUDA, QT
-\vspace{2pt}
-\item \textbf{Programming Languages:} Proficient in: Python, C++, \LaTeX;\\
-Python Stack: PyTorch, Cython, TensorFLow, Ignite, OpenCV, Scipy, Pandas \\
-Also basic ability with: Bash, JavaScript, C\#
-\vspace{2pt}
-\item \textbf{Skills:} Deep Learning, Neuroimaging, Reinforcement Learning, Computer Vision, Digital Signal Processing, Biometric.
-\vspace{2pt}
-\item \textbf{Languages:} Russian (Native speaker), English (Advanced)
-
-
-
-\end{itemize}
-
-\section{Interests and extra-curricular activity}
-
-\vspace{6pt}
-
-\begin{itemize}
-
-\item{In mid-2017, I subscribed to the daily RSS feed from arxiv.org (cs.CV, cs.AI, cs.NE, cs.HC). Now this is my main source of news and inspiration.}
-\vspace{2pt}
-\item{In 2015 I earned a scholarship of Huawei "For the achievements in the academic and professional areas".}
-\vspace{2pt}
-\item{Other intersests include professional dancing, especially ballroom and latina, which I consider as main active hobby and guitar, which I am self-taught.}
-
-
-
-\end{itemize}
 
 \end{document}
