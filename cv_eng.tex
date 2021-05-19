@@ -6,20 +6,21 @@
 \usepackage{fontawesome}
 \usepackage[utf8]{inputenc}     
 \usepackage[scale=0.80]{geometry}
+\usepackage{indentfirst}
 
 \patchcmd{\makehead}
 {\hfil}
-{\hspace*{0.07\textwidth}}
+{\hspace*{0.10\textwidth}}
 {}
 {}
 \patchcmd{\makehead}
-{\setlength{\makeheaddetailswidth}{0.8\textwidth}}
-{\setlength{\makeheaddetailswidth}{0.67\textwidth}}
+{}
+{}
 {}
 {}
 \patchcmd{\makehead}
 {\\[2.5em]}
-{\hfil\raisebox{-1.4cm}{\framebox{\includegraphics[width=\@photowidth]{\@photo}}}\\[2.5em]}
+{}
 {}
 {}
 
@@ -33,12 +34,11 @@
 \title{CV}
 \name{Ignatii}{Dubyshkin}
 \phone[mobile]{+7 916 295 2363}       
-\email{deadat0m@yandex.ru}
-\photo[64pt][1.0pt]{simple_photo}       
+\email{i.dubyshkin@gmail.com} %todo      
 \social[github]{DeadAt0m}
 
 
-\extrainfo{\begin{tabular}[t]{@{}c@{}}\\A engineer who looks for inspiration in human brain.
+\extrainfo{\begin{tabular}[t]{@{}c@{}}\\An engineer who looks for inspiration in human brain.
 \end{tabular}}
 
 
@@ -57,47 +57,50 @@
 
 
 \item{\cventry{ }{\footnotesize{Biometric Algorithm Lab}}{\href{https://research.samsung.com/srr}{\underline{Samsung R\&D Institute Russia}}}{Moscow, Russia}{}{}{
-\normalsize{\textbf{\textit{Research Engineer \hfill January 2019--March 2020}}} \\
-\small{\textbf{Participated in development of experimental face verification pipeline based on Time-of-Flight cameras:}}\\
+\normalsize{\textbf{\textit{Project Leader \hfill April 2020--Present}}} \newline 
+\small{\textbf{Lead the team of 6 engineers for improvement of Face Recognition algorithmic pipeline:}} \newline 
+\begin{itemize}
+	\item Responsible for development of Deep Metric Learning based part of pipeline: Adapted modern architectures and approaches that more than twicely boost the algorithm performance.
+	\item Optimizing algorithms and models for work on mobile platforms secure enviroment: fitted to ~2 Mb RAM and performed less than half-second on 1 ARM CPU Core.\
+	\item Created and maintain an inner Pytorch library which helps to share the articles and ideas implementations for research between our laboratory.
+    \item Managing development of Image Enhancement algorithms for Face Recognition pipeline.
+	\item Designed the inner neural network accelerator (because the existing ones are not applicable for our environment), which speed up algorithm deploy processes up to 60\%.
+	\item Made contributions to the inner Pytorch library by implementing the open articles in my free time (some of them are availible at my \href{https://github.com/DeadAt0m}{Github \faGithub}: \href{https://github.com/DeadAt0m/ActiveSparseShifts-PyTorch}{\underline{link1}} and \href{https://github.com/DeadAt0m/LSQ-PyTorch}{\underline{link2}}).
+\end{itemize}
+\vspace{4pt}
+\textbf{Main achievement:} \newline 
+\hspace*{.5em} Our algorithms were successfully commercialized in all modern Samsung Galaxy phones, \newline including flagships (Fold, S*, Note*, A*),
+and provide a positive experience with Face Recognition for every Samsung Galaxy phone user around the world. \newline
+
+\normalsize{\textbf{\textit{Research Engineer \hfill January 2019--March 2020}}} \newline 
+\small{\textbf{Participated in development of experimental face verification pipeline based on Time-of-Flight cameras:}}\newline 
 \begin{itemize}
 	\item Developed a Landmark Detector (TensorFlow).
 	\item Developed Deep Metric Learning based algorithms for obtaining efficient embeddings from face images (TensorFlow).
 	\item Optimized existing algorithms: conceptual and architectural changes, pruning and quantization for further porting to secure enviroment (very computational restricted) on mobile devices.
 \end{itemize}
 \vspace{10pt}
-\small{\textbf{Participation in maintaining of Face Recognition algorithmic pipeline used in modern Samsung mobile devices:}}\\
+\small{\textbf{Participation in maintaining of Face Recognition algorithmic pipeline used in modern Samsung mobile devices:}}\newline 
 \begin{itemize}
 	\item Initiated the development and maintain of inner python framework (Pytorch-Lightning based) used for training Deep Metric Learning models, which makes more comfortable all further algorithms improvement for the team.
     \item Developed the inner dataset format and rules, which makes the work with dataset comfortable, unified and reproducible: from data acquisition and annotation to dataset manipulation during training.
 \end{itemize}
 \vspace{10pt}
-\small{\textbf{Maintaining the local computational cluster:}}\\
+\small{\textbf{Maintaining the local computational cluster:}}\newline 
 \begin{itemize}
 	\item Deployed the JupyterHub with JupyterLab and MLflow, which makes cluster more user-friendly for research.
 	\item Tranformed the JupyterLab to fully functional web IDE by selecting and setup of its extensions for team needs.
 \end{itemize}
-\vspace{10pt}
-\normalsize{\textbf{\textit{Project Leader \hfill April 2020--Present}}} \\
-\small{\textbf{Lead the team of 6 engineers for improvement of Face Recognition algorithmic pipeline:}} \\
-\begin{itemize}
-	\item Responsible for development of Deep Metric Learning based part of pipeline: Adapted modern architectures and approaches that more than twicely boost the algorithm performance.
-	\item Taking part in development of Image Enhancement algorithms for Face Recognition pipeline. 
-	\item Optimizing algorithms and models for work on mobile platforms.
-	\item Created and maintain an inner Pytorch library which helps to share the articles and ideas implementations for research between our laboratory.
-	\item Initiated the idea of development of inner neural network accelerator, because the existing ones are not applicable to secure enviroment where all pipeline works. This helps us to speed up project R\&D processes.
-	\item Made contributions to the inner Pytorch library by implementing the open articles in my free time (some of them are availible at my \href{https://github.com/DeadAt0m}{Github \faGithub}).
-\end{itemize}
-\vspace{4pt}
-Our algorithms were successfully commercialized in all modern Samsung mobile phones, including flagships.
 }}
+
 \vspace{6pt}
 
 \item{\cventry{}{\footnotesize{Research laboratory, part of Higher School of Economics}}{\href{https://bioelectric.hse.ru/en/}{\underline{Centre for Bioelectric Interfaces}}}{Moscow, Russia}{}{}{
-\normalsize{\textbf{\textit{Research Intern \hfill November 2017--October 2018}}} \\
+\normalsize{\textbf{\textit{Research Intern \hfill November 2017--October 2018}}} \newline 
 \begin{itemize}
 \item{Searched, implemented and enhanced classical algorithms for preprocessing of EEG signal: ICA, wavelet based denoising, filter bank common spatial pattern.} 
 \end{itemize}
-\vspace{30pt}
+\vspace{10pt}
 \normalsize{\textbf{\textit{DevOps Engineer}}} 
 \begin{itemize}
 \item{Deployed and supported of a local computational cluster and cloud (x8 Nvidia 1080Ti) based on dockerized services: NextCloud, Jupyterhub, Collobora, MatterMost and complex built jupyter kernels.}
@@ -106,7 +109,7 @@ Our algorithms were successfully commercialized in all modern Samsung mobile pho
 
 \vspace{8pt}
 \item{\cventry{}{\footnotesize{A startup in the area of neuroscience dealing in biofeedback and biomonitoring}}{\href{http://neurocenter.pro/eng}{\underline{Neurocentre}}, LTD}{Moscow, Russia}{}{}{
-\normalsize{\textbf{\textit{Research Engineer \hfill June 2017--June 2018}}} \\
+\normalsize{\textbf{\textit{Research Engineer \hfill June 2017--June 2018}}} \newline 
 \begin{itemize}
 \item{Developed software for multichannel signal classification (deep learning based).}
 \item{Searched and adapted new technological devices and models; analyzed their applicability for the business interests of the company.}
@@ -116,7 +119,7 @@ Our algorithms were successfully commercialized in all modern Samsung mobile pho
 \vspace{8pt}
 
 \item{\cventry{}{\footnotesize{Neuroscience research institute, part of Russian Academy of Sciences}}{\href{https://ihna.ru/en/}{\underline{Institute of Higher Nervous Activity}}}{Moscow, Russia}{}{}{
-\normalsize{\textbf{\textit{Research Intern \hfill June 2014--January 2016}}} \\
+\normalsize{\textbf{\textit{Research Intern \hfill June 2014--January 2016}}} \newline 
 \begin{itemize}
 \item{Produced and published a research titled "The Use of Machine Learning Methods for Identification of the Efficient Learning State in the Neurofeedback Paradigm".}
 \item{Won and fulfilled a grant in a team of 8 for the work on a subject of "Neurocorrelates of sensor memory reactivation during sleep in the dynamics of long-term background correlations of electronic brain activity and auditory evoked potentials".}
@@ -173,9 +176,9 @@ Our algorithms were successfully commercialized in all modern Samsung mobile pho
 
 \vspace{3pt}
 \subsection{Coursera (\href{https://www.coursera.org/user/9fd327b17f80d7a02bfa6b9512cb97ae}{\underline{profile}})}
-\textbf{Deep Learning \footnotesize{(specialization - 5 courses; deeplearning.ai)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Average Grade Achieved: 100.0\%}} \\
-\textbf{Medical Neuroscience \footnotesize{(Duke University)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 99.7\%}} \\
-\textbf{Algorithmic Toolbox \footnotesize{(University of California San Diego \& Higher School of Economics)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 100.0\%}} \\
+\textbf{Deep Learning \footnotesize{(specialization - 5 courses; deeplearning.ai)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Average Grade Achieved: 100.0\%}} \newline 
+\textbf{Medical Neuroscience \footnotesize{(Duke University)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 99.7\%}} \newline 
+\textbf{Algorithmic Toolbox \footnotesize{(University of California San Diego \& Higher School of Economics)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 100.0\%}} \newline 
 \textbf{Data Structures \footnotesize{(University of California San Diego \& Higher School of Economics)}}  \hspace*{0pt}\hfill \textbf{\footnotesize{Grade Achieved: 100.0\%}} 
 
 
